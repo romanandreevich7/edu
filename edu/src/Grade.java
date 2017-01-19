@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/**TODO Срочно запросить у кого нибудь комментарий по работе кода!
+/**TODO !!!Срочно запросить у кого нибудь комментарий по работе кода!
 *нужно заставить сравнивать код введеное значение с перечислимыми типами
 **/
 
