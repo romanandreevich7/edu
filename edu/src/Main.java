@@ -1,11 +1,15 @@
 
+
+
 public class Main {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		FileCreator.fileCreate();
+	public static void main(String[] args) {	
+		Grade.print();
+		
+		
 	}
 
 }

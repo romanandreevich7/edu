@@ -9,6 +9,14 @@ import java.util.Date;
 
 
 public class FileCreator {
+	
+public enum Grade {
+	A, B, C, D, Incomplete
+}
+
+	
+final static String s1 = "s"; //финализированная переменная
+
 	public static String fileCreate() {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yy HH_mm_ss");
 		String filename = sdf.format(new Date()) + ".doc";
