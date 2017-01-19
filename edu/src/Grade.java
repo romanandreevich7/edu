@@ -3,7 +3,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**TODO !!!Срочно запросить у кого нибудь комментарий по работе кода!
-*нужно заставить сравнивать код введеное значение с перечислимыми типами
+*нужно заставить сравнивать код введеное значение с перечислимыми типами...Будет рассмотрено в главе 5 
+*Хорстмана
 **/
 
 
@@ -37,7 +38,7 @@ public class Grade  {
 	}
 	//этот метод выводит позицию переменной перичслимого типа.
 	public static void print() {
-		int position = Gradeling.C.ordinal();  
+		int position = Gradeling.B.ordinal();  
 	System.out.println(position);
 	}
 }
