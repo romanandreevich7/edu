@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 public class Grade  {
 	
 	public static enum Gradeling {
-			A, B, C;
+			A, B, C, D;
 
 			public String toString() {
 				switch (this) {
