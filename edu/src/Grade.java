@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 /**TODO !!!Срочно запросить у кого нибудь комментарий по работе кода!
 *нужно заставить сравнивать код введеное значение с перечислимыми типами...Будет рассмотрено 
@@ -11,7 +12,7 @@ import java.io.InputStreamReader;
 public class Grade  {
 	
 	public static enum gradeling {
-			A, B, C, D;
+			A, B, C, Moscow;
 			
 			public String toString() {
 				switch (this) {
@@ -19,22 +20,24 @@ public class Grade  {
 					return "A";
 				case B:
 					return "B";
+				case Moscow:
+					return "Moscow";
 				case C:
 					return "C";
 				}
 				return null;
 			}
 			
-			public static gradeling	value(Class<gradeling> enumType, String value){
-				if(value.equalsIgnoreCase(A.toString()))
-					return gradeling.A;
-				if(value.equalsIgnoreCase(B.toString()))
-					return gradeling.B;
-				if(value.equalsIgnoreCase(C.toString()))
-					return gradeling.C;
-				else 
-					return null;
-			}
+	public static gradeling	value(Class<gradeling> enumType, String value){
+		if(value.equalsIgnoreCase(A.toString()))
+			return gradeling.A;
+		if(value.equalsIgnoreCase(B.toString()))
+			return gradeling.B;
+		if(value.equalsIgnoreCase(Moscow.toString()))
+			return gradeling.Moscow;
+		else 
+			return null;
+		}
 	}	
 		
 	public static String arg1 (){
@@ -43,6 +46,9 @@ public class Grade  {
 	}
 		
 	public static void print() {
+		
+		//код выводит в консоль содержимое gradeling 
+		System.out.println(Arrays.toString(gradeling.values()));
 			
 		//код сравнивает значение из метода arg1 и конкретную константу enum				
 		if(arg1().equals(gradeling.A.toString())) {
