@@ -10,9 +10,9 @@ import java.io.InputStreamReader;
 
 public class Grade  {
 	
-	public static enum Gradeling {
+	public static enum gradeling {
 			A, B, C, D;
-
+			
 			public String toString() {
 				switch (this) {
 				case A:
@@ -25,20 +25,35 @@ public class Grade  {
 				return null;
 			}
 			
-			public static Gradeling	value(Class<Gradeling> enumType, String value){
+			public static gradeling	value(Class<gradeling> enumType, String value){
 				if(value.equalsIgnoreCase(A.toString()))
-					return Gradeling.A;
+					return gradeling.A;
 				if(value.equalsIgnoreCase(B.toString()))
-					return Gradeling.B;
+					return gradeling.B;
 				if(value.equalsIgnoreCase(C.toString()))
-					return Gradeling.C;
+					return gradeling.C;
 				else 
 					return null;
 			}
+	}	
+		
+	public static String arg1 (){
+			String a = "A";
+			return a;
 	}
-	//этот метод выводит позицию переменной перичслимого типа.
+		
 	public static void print() {
-		int position = Gradeling.B.ordinal();  
-	System.out.println(position);
+			
+		//код сравнивает значение из метода arg1 и конкретную константу enum				
+		if(arg1().equals(gradeling.A.toString())) {
+			System.out.println("eq");
+		} else {
+			System.out.println("noneq");
+		}
+		
+		//этот код выводит позицию переменной перичислимого типа.		
+		int position = gradeling.A.ordinal();  
+		System.out.println(position);
 	}
 }
+

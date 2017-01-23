@@ -12,8 +12,7 @@ public class Algorithms {
 		case 4: s = 900;
 		System.out.println(s);
 		//break; дописывать brеak обязательно, иначе код будет выполняться дальше
-		}
-		
+		}		
 		
 	}
 
