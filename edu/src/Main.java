@@ -7,7 +7,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {	
-		System.out.println(FileCreator.fileCreate()[0]);		
+		Algorithms.compare();		
 	}
 
 }

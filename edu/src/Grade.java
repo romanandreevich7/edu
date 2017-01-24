@@ -9,6 +9,7 @@ import java.util.Arrays;
 **/
 
 
+@SuppressWarnings("unused")
 public class Grade  {
 	
 	public static enum gradeling {
