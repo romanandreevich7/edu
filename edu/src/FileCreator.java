@@ -9,15 +9,8 @@ import java.util.Date;
 
 
 public class FileCreator {
-	
-public enum Grade {
-	A, B, C, D, Incomplete
-}
 
-	
-final static String s1 = "s"; //финализированная переменная
-
-	public static String fileCreate() {
+	public static String[] fileCreate() {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yy HH_mm_ss");
 		String filename = sdf.format(new Date()) + ".doc";
 		String absolutePath = "/home/roman/git/edu/edu/logs";
@@ -28,7 +21,11 @@ final static String s1 = "s"; //финализированная перемен�
 			e.printStackTrace();
 		}
 		String s = file.getName();
-		return s;
+		String absPath = file.getAbsolutePath();
+		String[] fileInfo = new String [2];//содержит путь к и название  файлу.
+		fileInfo [0] = absPath + "/" + filename;
+		
+		return fileInfo;		
 	}
 
 }
