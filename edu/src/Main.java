@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.sql.Time;
 
 
 
@@ -13,11 +14,10 @@ public class Main {
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		
-		TimeUtils.launchTimer();
-		Collections.createMap1();	
-		Algorithms.compare();
-		FileCreator.fileCreate();		 
+		 
+//		MultiThread.threadName();		
 						
 	}
 
 }
+

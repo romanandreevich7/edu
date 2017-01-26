@@ -9,7 +9,6 @@ import java.util.Arrays;
 **/
 
 
-@SuppressWarnings("unused")
 public class Grade  {
 	
 	public static enum gradeling {
@@ -36,12 +35,12 @@ public class Grade  {
 			return gradeling.B;
 		if(value.equalsIgnoreCase(Moscow.toString()))
 			return gradeling.Moscow;
-		else 
+		else 	
 			return null;
 		}
 	}	
 		
-	public static String arg1 (){
+	public static String arg1 (){	
 			String a = "A";
 			return a;
 	}

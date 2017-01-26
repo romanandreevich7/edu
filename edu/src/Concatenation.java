@@ -12,5 +12,7 @@ public class Concatenation {
 			System.out.println("no");
 		}
 		
+		Collections.createMap().put(TimeUtils.realTime(), "Concatenation done");
+		
 	}	
 }
