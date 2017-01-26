@@ -15,7 +15,7 @@ public class WriteInFile {
 	
 	
 	
-/**	public static void write() throws FileNotFoundException, IOException{
+	public static void write() throws FileNotFoundException, IOException{
 		WriteInFile doWrite = new WriteInFile();
 		doWrite.processingFiles();	
 	}
@@ -31,7 +31,7 @@ public class WriteInFile {
 		FileWriter fw = new FileWriter();
 		fw.write(result);		
 	}	 
-**/		
+		
 }
 
 

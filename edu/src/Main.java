@@ -13,7 +13,8 @@ public class Main {
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		
-		Collections.createMap();	
+		TimeUtils.launchTimer();
+		Collections.createMap1();	
 		Algorithms.compare();
 		FileCreator.fileCreate();		 
 						

@@ -27,8 +27,8 @@ public class FileCreator {
 		}
 		PrintWriter out = new PrintWriter(file.getAbsoluteFile());
 		try { 
-			out.println("file created on " + sdf.format(new Date()));
-			out.println(x);
+			out.println("file created on " + sdf.format(new Date()));//здесь происходит запись в файл пременной x и даты создания имени файла
+			out.println(Collections.createMap1().toString());
 		} finally {
 			out.close();
 		}				
