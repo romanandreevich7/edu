@@ -14,7 +14,16 @@ public class Main {
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		
-		 
+		MultiThread mthrd = new MultiThread("mthrd");
+		mthrd.start();
+		try {
+			mthrd.join();
+			System.out.println(Thread.currentThread());
+		} catch (InterruptedException e) {
+			System.out.println(e.toString());
+		}
+		System.out.println("main finished");
+		
 //		MultiThread.threadName();		
 						
 	}
