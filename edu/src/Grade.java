@@ -44,7 +44,7 @@ public class Grade  {
 			String a = "A";
 			return a;
 	}
-		
+			
 	public static void print() {
 		
 		//код выводит в консоль содержимое gradeling 
